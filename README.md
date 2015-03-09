@@ -1,4 +1,4 @@
-# jjbird-lucee
+# lucee
 Basic Docker container for Lucee Express
 
 ## How to run
