@@ -1,8 +1,10 @@
 FROM java:8
 MAINTAINER Jeffrey Bird <jeff@jbird.org>
 
+ENV LUCEE_VERSION=5.0.0.44
+
 WORKDIR /app/lucee
-RUN curl -Lo lucee.zip  https://bitbucket.org/lucee/lucee/downloads/lucee-4.5.1.000-express.zip && \
+RUN curl -Lo lucee.zip  https://bitbucket.org/lucee/lucee/downloads/lucee-$LUCEE_VERSION-express.zip && \
     unzip lucee.zip && rm -f lucee.zip
 
 EXPOSE 8888 8009
