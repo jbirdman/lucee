@@ -1,4 +1,4 @@
-FROM java:8
+FROM openjdk:8
 MAINTAINER Jeffrey Bird <jeff@jbird.org>
 
 ENV LUCEE_VERSION=4.5.1.000
